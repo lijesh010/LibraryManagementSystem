@@ -2,7 +2,7 @@
 This project is a Library Management System that keeps track of all the information about books in the library, including their rental cost, status, and the total number of books available. It provides functionalities to manage branches, employees, customers, book issues, and returns.
 
 ## Database Setup
-Create a new database named library to store the information.
+Create a new database named "Library" to store the information.
 
 Create the following tables within the library database:
 
