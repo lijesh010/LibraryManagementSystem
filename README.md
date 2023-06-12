@@ -1,47 +1,16 @@
 # Library Management System
-This project is a Library Management System that keeps track of all the information about books in the library, including their rental cost, status, and the total number of books available. It provides functionalities to manage branches, employees, customers, book issues, and returns.
+This project is a Library Management System that allows for efficient management of a library's operations. It provides functionalities to track books, customers, employees, book issuance, and returns. The system maintains a comprehensive database of books, their availability status, rental cost, and other relevant details. It also enables effective management of customers and employees associated with the library.
 
 ## Database Setup
 Create a new database named "Library" to store the information.
-
-Create the following tables within the library database:
-
-### Branch
-  ◾Branch_no (PRIMARY KEY)
-  ◾Manager_Id
-  ◾Branch_address
-  ◾Contact_no
-### Employee
-  ◾Emp_Id (PRIMARY KEY)
-  ◾Emp_name
-  ◾Position
-  ◾Salary
-### Customer
-  ◾Customer_Id (PRIMARY KEY)
-  ◾Customer_name
-  ◾Customer_address
-  ◾Reg_date
-### IssueStatus
-  ◾Issue_Id (PRIMARY KEY)
-  ◾Issued_cust (FOREIGN KEY, referencing Customer_id in CUSTOMER table)
-  ◾Issued_book_name
-  ◾Issue_date
-  ◾Isbn_book (FOREIGN KEY, referencing isbn in BOOKS table)
-### ReturnStatus
-  ◾Return_Id (PRIMARY KEY)
-  ◾Return_cust
-  ◾Return_book_name
-  ◾Return_date
-  ◾Isbn_book2 (FOREIGN KEY, referencing isbn in BOOKS table)
-### Books
-  ◾ISBN (PRIMARY KEY)
-  ◾Book_title
-  ◾Category
-  ◾Rental_Price
-  ◾Status (yes if the book is available, no if the book is not available)
-  ◾Author
-  ◾Publisher
-## Queries
+## Features
+### Book Management: Add, update, and remove books from the library's collection. Track book details such as title, category, rental price, availability status, author, and publisher.
+### Customer Management: Maintain a record of library customers, including their names, addresses, registration dates, and issuance history.
+### Employee Management: Manage library staff, including employee names, positions, salaries, and branch assignments.
+Book Issuance and Returns: Track the issuance and return of books by customers. Monitor the status of issued books and ensure timely returns.
+#### Branch Management: Maintain information about library branches, including branch numbers, manager assignments, addresses, and contact details.
+## Queries and Analysis
+The project includes various SQL queries and data analysis tasks to extract valuable insights from the library's data. Some of the key queries implemented include:
 ### 1.Retrieve the book title, category, and rental price of all available books.
 ### 2.List the employee names and their respective salaries in descending order of salary.
 ### 3.Retrieve the book titles and the corresponding customers who have issued those books.
